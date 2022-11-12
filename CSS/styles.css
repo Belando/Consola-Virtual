@@ -17,12 +17,12 @@ body{
     display: flex;
     height: 800px;
     width: 500px;
-    background: #3dcf49;
+    background: #0a8b64;
     border-top-right-radius: 3%;
     border-top-left-radius: 3%;
     border-bottom-right-radius: 10%;
     border-bottom-left-radius: 10%;
-    border: black solid 1px;
+    border: black solid 2px;
     margin: auto;
     flex-direction: column;
 }
@@ -46,15 +46,21 @@ body{
 }
 
 #boton {
-    height: 30px;
-    width: 1px;
+    height: 40px;
+    width: 10px;
     position: absolute;
     background-color: rgb(44, 42, 42);
     border:black solid 1px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
     top:200px;
     left: 750px;
+    padding: 1px 1px 1px 1px;
+}
+
+#boton:active{
+    transform: translateY(-2px);
+    background-color: #666;
 }
 
 .pantalla{
@@ -68,8 +74,61 @@ body{
     justify-content: flex-start;
 }
 
+#video {
+    display: none;
+    background-color: white;
+    height: 300px;
+    width: 340px;
+    left: 5px;
+}
 
-/* Parte 3: Letras Logo */
+/* Parte 3: Encendido de LED con Botón */
+
+.led::before {
+    display: none;
+    content:"";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: rgb(222, 45, 13);
+    position: absolute;
+    top: 240px;
+    left: 290px;
+}
+
+.led_on::before {
+    content:"";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background:rgb(222, 45, 13);
+    box-shadow: 0px 0px 10px 2px rgb(252, 139, 120);
+    position: absolute;
+    top: 220px;
+    left: 290px;
+}
+
+.led::after {
+    content: "POWER";
+    color: grey;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 240px;
+    left: 282px;
+}
+
+.led_on::after {
+    content: "POWER";
+    color: grey;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 240px;
+    left: 282px;
+}
+
+/* Parte 4: Letras GameBoy y Logo */
 
 .espaciado{ 
     letter-spacing: -3px;
@@ -118,9 +177,6 @@ body{
     font-family: ComicSansMS;
 }
 
-
-/*Parte 4: Logo de Nintendo*/
-
 .logo{
     width: 118px;
     display: flex;
@@ -131,6 +187,7 @@ body{
     border-radius: 20px;
     color: #0b4f34;
     margin: 0px 0px 0px 40%;
+    top: 100px;
 }
 
 
@@ -160,7 +217,7 @@ body{
     background-color: #313131;
     height: 40px;
     width: 40px;
-    top: 600px;
+    top: 602px;
     left: 355px;
     color: rgb(31, 31, 31);
     border:1px solid rgba(0,0,0,.3);
