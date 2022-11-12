@@ -1,4 +1,5 @@
 
+
 body{
     display: flex;
     height: 1000px;
@@ -6,6 +7,7 @@ body{
     margin: 0;
     align-content: center;
     align-items: center;
+    background-image:url(/IMG/Madera.jpg);
 }
 
 
@@ -20,7 +22,7 @@ body{
     border-top-left-radius: 3%;
     border-bottom-right-radius: 10%;
     border-bottom-left-radius: 10%;
-    border: black 2px;
+    border: black solid 1px;
     margin: auto;
     flex-direction: column;
 
@@ -34,8 +36,9 @@ body{
     height: 380px;
     background-color: black;
     display: flex;
-    border: 2px black;
     margin: 40px 25px 20px 25px;
+    border: #0b4f34 solid 3px;
+    color: #0b4f34;
     border-radius: 4%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
@@ -70,41 +73,50 @@ body{
     color: #810d2c;
     font-size: 2em;
     font-weight: bold;
+    font-family: ComicSansMS;
 }
 
 .o{
     color: #393981;
     font-size: 2em;
     font-weight: bold;
+    font-family: ComicSansMS;
 }
 
 .l{
     color: #469c27;
     font-size: 2em;
     font-weight: bold;
+    font-family: ComicSansMS;
 }
 
 .o2{
     color: #a6a02d;
     font-size: 2em;
     font-weight: bold;
+    font-family: ComicSansMS;
 }
 
 .r{
     color:#11969b;
     font-size: 2em;
     font-weight: bold;
+    font-family: ComicSansMS;
 }
 
 
 /*Parte 4: Logo de Nintendo*/
 
 .logo{
+    width: 120px;
     display: flex;
-    align-items:center;
     justify-content: center;
-    font-size: 22px;
-    border-radius: 3px black;
+    font-size: 21px;
+    font-family:pretendoregular;
+    border: #0b4f34 solid 3px;
+    border-radius: 20px;
+    color: #0b4f34;
+    margin: 0px 0px 0px 40%;
 
 }
 
@@ -112,10 +124,11 @@ body{
 /*Parte 5: Cruceta*/
 
 .centro{
-    height: 100px;
+    height: 200px;
     width: 500px;
     display: flex;
     align-self: center;
+    justify-content: space-between;
 }
 
 .cruceta{
@@ -126,12 +139,193 @@ body{
 
 }
 
-.botones{
+#arriba{
+    position: absolute;
     display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    justify-content: center;
-
+    font-size: 2.5em;
+    background-color: #313131;
+    height: 40px;
+    width: 40px;
+    top: 641px;
+    left: 355px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgba(0,0,0,.3);
+    border-bottom: none;
+	border-radius: 4px 4px 0px 0px;
+    box-shadow: 3px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
-/*Parte 6: 
+#arriba p{
+    margin: auto;
+    position:relative;
+    top: -5px;
+    }
+
+    
+#abajo {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: #313131;
+    height: 40px;
+    width: 40px;
+    top: 721px;
+    left: 355px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgba(0,0,0,.3);
+	border-top: none;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#abajo p{
+margin: auto;
+position:relative;
+top: -9px;
+}
+
+#derecha {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: #313131;
+    height: 40px;
+    width: 40px;
+    top: 681px;
+    left: 395px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgba(0,0,0,.3);
+	border-left: none;
+	border-radius: 0px 4px 4px 0px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+#derecha p{
+margin: auto;
+position:relative;
+top: -7px;
+}
+
+#izquierda {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: #313131;
+    height: 40px;
+    width: 40px;
+    top: 681px;
+    left: 315px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgba(0,0,0,.3);
+	border-right: none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+#izquierda p{
+margin: auto;
+position:relative;
+top: -9px;
+}
+
+/*Parte 6: Botones A y B */
+
+.botones {
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top: 600px;
+    left: 520px;
+}
+
+#a {
+    position: absolute;
+    left: 140px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: black solid 1px;
+    background: #313131;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#b {
+    position: absolute;
+    top: 40px;
+    left: -80px;
+    height: 60px;
+    width: 60px;
+    border: black solid 1px;
+    border-radius: 50%;
+    background: #313131;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#a p, #b p {
+    font-size: 2em;
+    font-family:'Trebuchet MS', sans-serif ;
+    color: rgb(31, 31, 31);
+    position: relative;
+    top: -21px;
+    left: 21px;
+    text-shadow: -1px -1px 0px rgba(61, 61, 61, 0.7);
+}
+
+
+/* Parte 7: Botones Select y Start */
+
+.inferior {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#select {
+    margin: 0 10px 0 0;
+    height: 18px;
+    width: 60px;
+    text-align: center;
+    border-radius: 30px;
+    border: black solid 1px;
+    background: #313131;
+    box-shadow: 0px 0px 3px 3px rgba(23, 23, 23, 0.3);
+}
+
+#start {
+    margin: 0 0 0 10px;
+    height: 18px;
+    width: 60px;
+    text-align: center;
+    border-radius: 30px;
+    border: black solid 1px;
+    background: #313131;
+    box-shadow: 0px 0px 3px 3px rgba(23, 23, 23, 0.3);
+}
+
+#select, #start {
+    font-size: 1.1em;
+    font-family:'Trebuchet MS', sans-serif ;
+    margin-top: 40px;
+    color: #0b4f34;
+}
+
+
+
+/*Extras: fuentes añadidas*/
+
+@font-face {
+    font-family: 'pretendoregular';
+    src: url(../fonts/pretendo.woff2) format('woff2'),
+         url(../fonts/pretendo.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ComicSansMS';
+    src: url(../fonts/ComicSansMS.woff2) format('woff2'),
+         url(../fonts/ComicSansMS.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
