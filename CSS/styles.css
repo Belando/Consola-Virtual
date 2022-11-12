@@ -1,0 +1,137 @@
+
+body{
+    display: flex;
+    height: 1000px;
+    width: 1000px;
+    margin: 0;
+    align-content: center;
+    align-items: center;
+}
+
+
+/* Parte 1: Carcasa */
+
+.carcasa{
+    display: flex;
+    height: 800px;
+    width: 500px;
+    background: #147a51;
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border: black 2px;
+    margin: auto;
+    flex-direction: column;
+
+}
+
+
+/* Parte 2: Pantalla */
+
+.marcopantalla{
+    width: 450px;
+    height: 380px;
+    background-color: black;
+    display: flex;
+    border: 2px black;
+    margin: 40px 25px 20px 25px;
+    border-radius: 4%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pantalla{
+    height: 300px;
+    width: 320px;
+    background: rgb(44, 42, 42);
+    margin: 30px 60px 10px 60px;
+    border-radius: 1%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+
+/* Parte 3: Letras Logo */
+
+
+.gameboy{
+    font-size: 2em;
+    color: grey;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.c{
+    color: #810d2c;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.o{
+    color: #393981;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.l{
+    color: #469c27;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.o2{
+    color: #a6a02d;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.r{
+    color:#11969b;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+/*Parte 4: Logo de Nintendo*/
+
+.logo{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 3px black;
+
+}
+
+
+/*Parte 5: Cruceta*/
+
+.centro{
+    height: 100px;
+    width: 500px;
+    display: flex;
+    align-self: center;
+}
+
+.cruceta{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.botones{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/*Parte 6: 
