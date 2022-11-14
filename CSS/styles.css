@@ -441,6 +441,9 @@ top: -6px;
     font-family:'Trebuchet MS', sans-serif ;
     margin-top: 40px;
     color: #0b4f34;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 
