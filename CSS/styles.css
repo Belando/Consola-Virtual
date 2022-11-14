@@ -95,7 +95,7 @@ body{
 }
 
 #video {
-    display: flex;
+    display: none;
     background-color: rgb(9, 9, 9);
     height: 300px;
     width: 340px;
@@ -149,8 +149,11 @@ body{
 
 /* Parte 4: Letras GameBoy y Logo */
 
-.espaciado{ 
-    letter-spacing: -3px;
+.formacolor{ 
+    letter-spacing: -6px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: ComicSansMS;
 } 
 
 .gameboy{
@@ -161,39 +164,23 @@ body{
 }
 
 .c{
-    color: #810d2c;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: ComicSansMS;
-    letter-spacing: 0;
+    color: #810d2c; 
 }
 
 .o{
-    color: #393981;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: ComicSansMS;
+    color: #393981; 
 }
 
 .l{
     color: #469c27;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: ComicSansMS;
 }
 
 .o2{
     color: #a6a02d;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: ComicSansMS;
 }
 
 .r{
     color:#11969b;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: ComicSansMS;
 }
 
 .logo{
@@ -218,15 +205,6 @@ body{
     display: flex;
     align-self: center;
     justify-content: space-between;
-}
-
-.cruceta{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 250px;
-    width: 250px;
 }
 
 #Barriba{
@@ -432,7 +410,6 @@ top: -6px;
     margin: 0 5px 0 0;
     height: 18px;
     width: 60px;
-    text-align: center;
     border-radius: 30px;
     border: black solid 1px;
     background: #313131;
@@ -448,7 +425,6 @@ top: -6px;
     margin: 0 0 0 10px;
     height: 18px;
     width: 60px;
-    text-align: center;
     border-radius: 30px;
     border: black solid 1px;
     background: #313131;
@@ -480,8 +456,7 @@ top: -6px;
     top: 750px;
     left: 640px;
     height: 100px;
-    width: 60px;
-    
+    width: 60px; 
 }
 
 

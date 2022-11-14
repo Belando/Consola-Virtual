@@ -1,4 +1,4 @@
-// Funcion de Encendido de la consola mediante click del botón//
+// Función de encendido de vídeo y LED al pulsar el botón//
 
 function iniciar() {
     var boton = document.getElementById('boton');
@@ -15,7 +15,7 @@ function presionar() {
 }
 window.addEventListener('load', iniciar, false);
 
-// Funcion de apagado de la consola una vez finaliza el video de inicio //
+// Funcion de apagado de LED al acabar el vídeo //
 
 document.getElementById('video').addEventListener('ended',myHandler,false);
     function myHandler(e) {
